@@ -10,9 +10,9 @@ const Header1 = () => {
   const colorMode = useContext(ColorModeContext);
   const theme = useTheme();
   return (
-    <div>
+    <div className=" bg-[#2B3445]">
       {theme.palette.mode === "light" ? (
-        <IconButton
+        <IconButton 
           onClick={() => {
             localStorage.setItem(
               "mode",
@@ -22,7 +22,7 @@ const Header1 = () => {
           }}
           color="inherit"
         >
-          <LightModeOutlined />
+          <LightModeOutlined  className=" text-white " />
         </IconButton>
       ) : (
         <IconButton
@@ -35,7 +35,7 @@ const Header1 = () => {
           }}
           color="inherit"
         >
-          <DarkModeOutlined/>
+          <DarkModeOutlined className=" "/ >
         </IconButton>
       )}
     </div>

@@ -2,6 +2,8 @@ import Typography from "@mui/material/Typography";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { ColorModeContext, useMode } from "./theme";
 import Header1 from "./components/header/Header1";
+import Header2 from "./components/header/Header2";
+import Header3 from "./components/header/Header3";
 
 
 function App() {
@@ -13,6 +15,8 @@ function App() {
         <div className="App">
    
 <Header1/>
+<Header2/>
+<Header3/>
         </div>
       </ThemeProvider>
     </ColorModeContext.Provider>
