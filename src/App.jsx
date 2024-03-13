@@ -1,37 +1,22 @@
-import { useState } from 'react'
+import Typography from "@mui/material/Typography";
 import { CssBaseline, ThemeProvider } from "@mui/material";
-import { ColorModeContext, useMode } from './theme';
-import './App.css'
-import Header1 from './components/header/Header1'
-import Header2 from './components/header/Header2'
-import Header3 from './components/header/Header3'
+import { ColorModeContext, useMode } from "./theme";
+import Header1 from "./components/header/Header1";
+
 
 function App() {
-
   const [theme, colorMode] = useMode();
   return (
-  
     <ColorModeContext.Provider value={colorMode}>
-
-   <ThemeProvider theme={theme}><
-      <CssBaseline />
-    
-      <Header1/>
-<Header2/>
-<Header3/>
-
-    
-    /ThemeProvider>
-
-
-
-
-
-</ThemeProvider>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <div className="App">
+   
+<Header1/>
+        </div>
+      </ThemeProvider>
     </ColorModeContext.Provider>
-
-
-  )
+  );
 }
-    
-export default App
+
+export default App;

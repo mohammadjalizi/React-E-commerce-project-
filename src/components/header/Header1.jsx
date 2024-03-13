@@ -35,7 +35,7 @@ const Header1 = () => {
           }}
           color="inherit"
         >
-          <DarkModeOutlinedIcon />
+          <DarkModeOutlined/>
         </IconButton>
       )}
     </div>
