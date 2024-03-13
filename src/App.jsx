@@ -1,7 +1,9 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
+import Header1 from 'components/header/Header1'
+import Header2 from 'components/header/Header2'
+import Header3 from 'components/header/Header3'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,10 +12,12 @@ function App() {
   
 <>
 
-<div className='  text-red    text-3xl p-8 '>
-hello
+<Header1/>
+<Header2/>
+<Header3/>
 
-</div>
+
+
 
 
 </>
@@ -21,5 +25,5 @@ hello
 
   )
 }
-
+    
 export default App
