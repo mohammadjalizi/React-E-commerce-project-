@@ -12,7 +12,7 @@ const Header1 = () => {
   return (
 
     
-    <div className="   flex  items-center  justify-between bg-[#2B3445]">
+    <div className="  md:mx-auto  flex  items-center  justify-between bg-[#2B3445]">
       <div className=" login ">
 
       <div className="d-flex align-items-center justify-content-center">
