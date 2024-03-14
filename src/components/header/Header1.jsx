@@ -10,7 +10,22 @@ const Header1 = () => {
   const colorMode = useContext(ColorModeContext);
   const theme = useTheme();
   return (
-    <div className=" bg-[#2B3445]">
+
+    
+    <div className="   flex  items-center  justify-between bg-[#2B3445]">
+      <div className=" login ">
+
+      <div className="d-flex align-items-center justify-content-center">
+<a href="https://pik.coffee/my-account/" className=" text-white d-flex align-items-center">ورود  <span>/</span> ثبت نام</a></div>
+
+      </div>
+      <div className="  ">
+
+<a  className="  m-3 text-white " href=""> صفحه اصلی</a>
+<a  className=" text-white " href="#">فروشگاه</a>
+<a  className=" text-white " href=""> بلاگ </a>
+<a className="  text-white " href=""> درباره ما </a>
+      </div>
       {theme.palette.mode === "light" ? (
         <IconButton 
           onClick={() => {
