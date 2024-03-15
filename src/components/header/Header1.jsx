@@ -11,8 +11,14 @@ const Header1 = () => {
   const theme = useTheme();
   return (
 
-    
-    <div className="  md:mx-auto  flex  items-center  justify-between bg-[#2B3445]">
+    <div className=" bg-[#2B3445] ">
+
+
+   
+    <div className="   md:mx-36  p-4 flex  items-center  justify-between ">
+
+
+   
       <div className=" login ">
 
       <div className="d-flex align-items-center justify-content-center">
@@ -21,7 +27,7 @@ const Header1 = () => {
       </div>
       <div className="  ">
 
-<a  className="  m-3 text-white " href=""> صفحه اصلی</a>
+<a  className="  m-3   text-white " href="">  صفحه ی اصلی</a>
 <a  className=" text-white " href="#">فروشگاه</a>
 <a  className=" text-white " href=""> بلاگ </a>
 <a className="  text-white " href=""> درباره ما </a>
@@ -53,7 +59,9 @@ const Header1 = () => {
           <DarkModeOutlined className=" "/ >
         </IconButton>
       )}
+
     </div>
+     </div>
   );
 };
 
