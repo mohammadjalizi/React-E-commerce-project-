@@ -25,13 +25,22 @@ const Header1 = () => {
 <a href="https://pik.coffee/my-account/" className=" text-white d-flex align-items-center">ورود  <span>/</span> ثبت نام</a></div>
 
       </div>
-      <div className="  ">
+<div className="  ">
 
-<a  className="  m-3   text-white " href="">  صفحه ی اصلی</a>
-<a  className=" text-white " href="#">فروشگاه</a>
-<a  className=" text-white " href=""> بلاگ </a>
-<a className="  text-white " href=""> درباره ما </a>
-      </div>
+  <ul  className=" flex gap-4  flex-row-reverse">
+
+<li className=" mx-6 ">
+  <a className="  text-white" href="#"> صقحه اصلی </a>
+</li>
+<li className=" mx-6 ">
+  <a className=" text-white" href="#">  فروشگاه </a>
+</li><li className=" mx-6 ">
+  <a className=" text-white" href="#">  بلاگ </a>
+</li><li className=" mx-6 ">
+  <a className=" text-white" href="#">  درباره ما </a>
+</li>
+  </ul>
+</div>
       {theme.palette.mode === "light" ? (
         <IconButton 
           onClick={() => {
