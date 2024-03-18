@@ -1,7 +1,7 @@
 import   { useContext } from "react";
 import { ColorModeContext } from "../../theme";
 
-import { DarkModeOutlined, LightModeOutlined } from "@mui/icons-material";
+import { DarkModeOutlined, LightModeOutlined, ShoppingCart } from "@mui/icons-material";
 import { IconButton, useTheme } from "@mui/material";
 
 
@@ -41,7 +41,12 @@ const Header1 = () => {
 </li>
   </ul>
 </div>
-      {theme.palette.mode === "light" ? (
+<div className=" icons flex items-center ">
+<div className=" relative ">
+<span className="   absolute   left-14 rounded-3xl shadow-2xl text-white  text-w">4</span>
+<ShoppingCart  className="  mx-8 cursor-pointer text-white"/>
+</div>
+{theme.palette.mode === "light" ? (
         <IconButton 
           onClick={() => {
             localStorage.setItem(
@@ -68,6 +73,10 @@ const Header1 = () => {
           <DarkModeOutlined className=" "/ >
         </IconButton>
       )}
+
+
+</div>
+  
 
     </div>
      </div>
