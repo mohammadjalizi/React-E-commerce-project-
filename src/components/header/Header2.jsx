@@ -10,12 +10,12 @@ const Header2 = () => {
 </div>
 
 
-<div className=' swiper left'> 
+<div className='    hidden md:block swiper left    ' > 
    <div>
 <img src='src/assets/coffee_assets/black_coffee/portrait/black_coffee_pic_1_portrait.png' />
    </div>
    <div>
-2
+<img src="src/assets/coffee_assets/black_coffee/portrait/black_coffee_pic_2_portrait.png" alt="" />
    </div>
       </div> 
     </div>
