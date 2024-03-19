@@ -11,9 +11,9 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 const Header2 = () => {
   return (
-    <div className='    mt-12 flex justify-between     md:mx-40 '>
+    <div className='    mt-12 flex justify-between   border border-red-600  h-1/3   md:mx-40 '>
       
-<div>
+<div className=' border border-red-500  w-96 '> 
 
 <Swiper
         pagination={{
@@ -31,9 +31,9 @@ const Header2 = () => {
 </div>
 
 
-<div className='    hidden md:block swiper left    ' > 
-   <div>
-<img src='src/assets/coffee_assets/black_coffee/portrait/black_coffee_pic_1_portrait.png' />
+<div className='      hidden md:flex swiper left    ' > 
+   <div className=' h-56 '>
+<img  className='  h-48 ' src='src/assets/coffee_assets/black_coffee/portrait/black_coffee_pic_1_portrait.png' />
    </div>
    <div>
 <img src="src/assets/coffee_assets/black_coffee/portrait/black_coffee_pic_2_portrait.png" alt="" />
