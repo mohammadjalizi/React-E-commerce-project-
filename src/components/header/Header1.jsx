@@ -27,7 +27,7 @@ const Header1 = () => {
       </div>
 <div className="  ">
 
-  <ul  className=" flex gap-4  flex-row-reverse">
+  <ul  className=" flex gap-4  ">
 
 <li className=" mx-6 ">
   <a className="  text-white" href="#"> صقحه اصلی </a>

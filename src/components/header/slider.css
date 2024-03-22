@@ -1,7 +1,22 @@
-.backgrund{
+.photo{
 
+    animation: bordermove 5s infinite;
 
-background-image: url("src/assets/coffee_assets/image/home-bg.jpg");
+}
 
+@keyframes bordermove{
+    0%{
+border-radius: 5px;
 
+padding: 5px 20px;
+    }
+50%{
+border-radius: 20px;
+padding: 3px 5px;
+margin-top: 40px;
+}
+100%{
+border-radius: 5px;
+padding: 5px 20px;
+}
 }
