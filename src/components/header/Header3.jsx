@@ -2,7 +2,7 @@ import React from 'react'
 import './slider.css'
 const Header3 = () => {
   return (
-    <div className=' flex justify-between items-center mx-20 '>
+    <div className=' flex  flex-wrap justify-between items-center mx-20 '>
       
 < div  className='  ' > 
 
