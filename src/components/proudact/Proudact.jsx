@@ -2,6 +2,7 @@ import { ShoppingCart } from '@mui/icons-material'
 import React from 'react'
 
 
+import './product.css';
 
 const mydata=[
 
@@ -77,6 +78,24 @@ return(
 })}
 
 
+</div>
+
+
+
+{/* selectproducts */}
+
+
+<div  className=' flex flex-wrap     md:mx-52   my-10 justify-between '>
+
+<div>
+  <h2 className=' m-10'>انتخاب محصولات</h2>
+</div>
+<div className='  '>
+ <button className=' m-10 border  rounded-2xl  p-4 '>  مشاهده همه </button>
+ <button className=' m-10 border  rounded-2xl p-4 '>  مشاهده همه </button>
+ <button className=' m-10 border  rounded-2xl  p-4 '>  مشاهده همه </button>
+ <button className=' m-10 border  rounded-2xl  p-4 '>  مشاهده همه </button>
+</div>
 </div>
 
 
