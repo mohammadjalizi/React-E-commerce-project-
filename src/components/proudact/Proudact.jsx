@@ -1,4 +1,17 @@
+import { ShoppingCart } from '@mui/icons-material'
 import React from 'react'
+
+
+
+const mydata=[
+
+{id:1, alt:"خرید دمنوش گیاهی مخلوط بابونه تی بگ", src:"https://mehr-e-giah.com/wp-content/uploads/2022/12/8-1-800x800.jpg",title:" دمنوش گیاهی مخلوط بابونه 14 عددی ",price:"۳۲۷,۰۰۰" },
+{id:1, alt:"خرید دمنوش گیاهی مخلوط بابونه تی بگ", src:"https://mehr-e-giah.com/wp-content/uploads/2022/12/1-2-2-1-800x800.jpg",title:"دمنوش مخلوط گل گاوزبان 14 عددی",price:"۳۲۷,۰۰۰" },
+{id:1, alt:"خرید دمنوش گیاهی مخلوط بابونه تی بگ", src:"https://mehr-e-giah.com/wp-content/uploads/2022/12/10-1-800x800.jpg",title:"دمنوش مخلوط چای ترش 14 عددی",price:"۳۲۷,۰۰۰" }
+
+
+
+]
 
 const Proudact = () => {
   return (
@@ -27,29 +40,49 @@ const Proudact = () => {
 
     </div>
 </div>
-<div className=' swiper '>
+<div className=' swiper  flex flex-wrap  justify-center gap-9 '>
+
+
+
+{mydata.map((item)=>{
+
+return(
 
 <div className=' shadow-2xl rounded-3xl ' > 
 
-<img
-  decoding="async"
+<img className=' w-80 h-80 ' src={item.src} alt="" />
 
-  src="https://mehr-e-giah.com/wp-content/uploads/2022/12/8-1-800x800.jpg"
-  className=" w-80 h-80 "
-  alt="خرید دمنوش گیاهی مخلوط بابونه تی بگ"
-  data-lazy-srcset="https://mehr-e-giah.com/wp-content/uploads/2022/12/8-1-800x800.jpg 800w, https://mehr-e-giah.com/wp-content/uploads/2022/12/8-1-600x600.jpg 600w, https://mehr-e-giah.com/wp-content/uploads/2022/12/8-1-150x150.jpg 150w, https://mehr-e-giah.com/wp-content/uploads/2022/12/8-1-300x300.jpg 300w, https://mehr-e-giah.com/wp-content/uploads/2022/12/8-1-768x768.jpg 768w, https://mehr-e-giah.com/wp-content/uploads/2022/12/8-1.jpg 1000w"
-  data-lazy-sizes="(max-width: 800px) 100vw, 800px"
-  data-lazy-src="https://mehr-e-giah.com/wp-content/uploads/2022/12/8-1-800x800.jpg"
-  data-ll-status="loaded"
-  sizes="(max-width: 800px) 100vw, 800px"
-  srcSet="https://mehr-e-giah.com/wp-content/uploads/2022/12/8-1-800x800.jpg 800w, https://mehr-e-giah.com/wp-content/uploads/2022/12/8-1-600x600.jpg 600w, https://mehr-e-giah.com/wp-content/uploads/2022/12/8-1-150x150.jpg 150w, https://mehr-e-giah.com/wp-content/uploads/2022/12/8-1-300x300.jpg 300w, https://mehr-e-giah.com/wp-content/uploads/2022/12/8-1-768x768.jpg 768w, https://mehr-e-giah.com/wp-content/uploads/2022/12/8-1.jpg 1000w"
-/>
+<h4 className=' p-10 '>
+<a href=""> {item.title} </a>
+
+</h4>
+<div className=' flex justify-between mx-8 py-5'>
+
+<div>
+  {item.price}
+  <span> نومان</span>
+  
+</div>
+<div className=' icon '>
+<ShoppingCart className=' hover:text-red-300 cursor-pointer '/>
+  </div>
+  </div>
 
 </div>
 
+  
+)
+
+
+})}
+
+
 </div>
 
-    </div>
+
+</div>
+
+   
   )
 }
 
