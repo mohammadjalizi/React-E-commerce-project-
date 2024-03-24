@@ -5,6 +5,7 @@ import Header1 from "./components/header/Header1";
 import Header2 from "./components/header/Header2";
 import Header3 from "./components/header/Header3";
 import'./App.css'
+import Proudact from "./components/proudact/Proudact";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -17,6 +18,7 @@ function App() {
 <Header1/>
 <Header2/>
 <Header3/>
+<Proudact/>
         </div>
       </ThemeProvider>
     </ColorModeContext.Provider>
